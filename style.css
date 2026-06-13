@@ -326,3 +326,94 @@ h2 {
   color: #c0407a;
   min-width: 110px;
 }
+
+#btn-nao {
+  position: fixed;
+  background: #f0f0f0;
+  color: #888;
+  border: 1.5px solid #ddd;
+  padding: 14px 40px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-family: Georgia, serif;
+  z-index: 999;
+  display: none;
+  width: auto;
+  max-width: 140px;
+  white-space: nowrap; /* impede o texto de quebrar linha */
+  top: 60%;
+  left: 55%;
+}
+
+@media (max-width: 480px) {
+  .grade-opcoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colunas */
+    gap: 10px;
+    width: 100%;
+    padding: 0 8px;
+  }
+
+  .card-opcao {
+    width: 100%;
+    min-height: 80px;
+    font-size: 0.82rem;
+    padding: 8px 6px;
+  }
+
+  .icone-img {
+    width: 100%;        /* imagem ocupa a largura do card */
+    height: 80px;       /* altura fixa */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 4px;
+  }
+
+  h1 { font-size: 1.4rem; }
+  h2 { font-size: 1.1rem; }
+
+  .btn-sim, .btn-proximo {
+    padding: 12px 28px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grade-opcoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    padding: 0 8px;
+  }
+
+  .card-opcao {
+    width: 100%;
+    min-height: 80px;
+    font-size: 0.82rem;
+    padding: 8px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* centraliza horizontalmente */
+    justify-content: center;  /* centraliza verticalmente */
+    text-align: center;       /* centraliza o texto */
+  }
+
+  .icone-img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto 4px auto;  /* auto nas laterais = centralizado */
+    display: block;
+  }
+
+  h1 { font-size: 1.4rem; }
+  h2 { font-size: 1.1rem; }
+
+  .btn-sim, .btn-proximo {
+    padding: 12px 28px;
+    font-size: 1rem;
+  }
+}
