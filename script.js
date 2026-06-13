@@ -1,4 +1,4 @@
-// guarda todas as escolhas da usuária
+// Objeto que guarda todas as escolhas da usuária
 const escolhas = {
   tipo: null,
   data: '',
@@ -7,7 +7,7 @@ const escolhas = {
   bebidas: []
 };
 
-//Corações flutuantes 
+// ─── Corações flutuantes ───────────────────────────────
 function criarCoracoes() {
   const container = document.getElementById('coracoes');
   const emojis = ['💕','💗','💖','🌸','✨','💝'];
@@ -39,7 +39,7 @@ function abrirEnvelope() {
   document.getElementById('aba').classList.add('aberta');
   setTimeout(() => {
     irPara('tela2');
-    // Mostra o botão Não e ativa o comportamento de fugir do cursor do mouse
+    // Mostra o botão Não e ativa o comportamento fujão
     document.getElementById('btn-nao').style.display = 'block';
     ativarBotaoFujao();
   }, 800);
@@ -76,6 +76,29 @@ function ativarBotaoFujao() {
     btn.style.left = novoX + 'px';
     btn.style.top  = novoY + 'px';
   });
+}
+
+function fugir() {
+  tentativas++;
+
+  const larguraBtn = 140;
+  const alturaBtn  = 52;
+  const margem     = 16;
+
+  const maxX = window.innerWidth  - larguraBtn - margem;
+  const maxY = window.innerHeight - alturaBtn  - margem;
+
+  const novoX = margem + Math.random() * maxX;
+  const novoY = margem + Math.random() * maxY;
+
+  btn.style.left   = novoX + 'px';
+  btn.style.top    = novoY + 'px';
+  btn.style.right  = 'auto';
+  btn.style.bottom = 'auto';
+  btn.style.width  = larguraBtn + 'px'; /* tamanho fixo sempre */
+
+  if (tentativas > 5)  btn.style.fontSize = '0.75rem';
+  if (tentativas > 10) btn.style.opacity  = '0.3';
 }
 
 // ─── Seleção única (tipo de encontro) ─────────────────
