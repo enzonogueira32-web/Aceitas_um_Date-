@@ -60,10 +60,6 @@ O usuário seleciona apenas uma opção.
 
 4. Escolha da Data e Horário
 
-Utiliza:
-
-<input type="datetime-local">
-
 Permite escolher:
 
 Dia
@@ -103,32 +99,6 @@ Horário
 Comidas
 Bebidas
 
-Exemplo:
-
-Date Confirmed! 💖
-
-Netflix & Chill
-
-12/07/2026 - 19:00
-
-Food: Pizza, Nachos
-
-Drinks: Coca-Cola, Frappé
-
-Can't wait to see you! ❤️
-
-Design
-Paleta de Cores
-Rosa Claro (#FFD6E8)
-Branco (#FFFFFF)
-Vermelho Suave (#FF6B81)
-Lilás Claro (#F3E8FF)
-Estilo
-Romântico
-Minimalista
-Responsivo
-Animações suaves
-Corações Flutuantes
 
 
 Responsividade
@@ -141,4 +111,4 @@ Smartphone
 
 link de acesso:
 
-https://conviteespecials.netlify.app/
+https://queriraumdatecomigo.netlify.app/
