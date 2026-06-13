@@ -2,8 +2,8 @@
 
 Um site romântico e interativo criado para convidar alguém para um encontro de forma divertida e personalizada.
 
-✨ Funcionalidades
-📩 1. Envelope Animado
+Funcionalidades
+1. Envelope Animado
 Tela inicial com um envelope.
 
 Mensagem:
@@ -11,7 +11,7 @@ Mensagem:
 "Click the envelope to open My Love"
 
 Ao clicar, o envelope abre com animação e revela o restante do site.
-💘 2. Pedido de Encontro
+2. Pedido de Encontro
 
 Pergunta principal:
 
@@ -46,7 +46,7 @@ noBtn.addEventListener("mouseover", () => {
     noBtn.style.left = `${x}px`;
     noBtn.style.top = `${y}px`;
 });
-🌅 3. Escolha do Tipo de Encontro
+3. Escolha do Tipo de Encontro
 
 Opções disponíveis:
 
@@ -58,7 +58,7 @@ Movie Night 🎬
 
 O usuário seleciona apenas uma opção.
 
-📅 4. Escolha da Data e Horário
+4. Escolha da Data e Horário
 
 Utiliza:
 
@@ -70,20 +70,18 @@ Dia
 Mês
 Ano
 Horário
-🍕 5. Escolha das Comidas
+5. Escolha das Comidas
 
 Exemplos:
 
 Pipoca 🍿
-Nachos 🧀
 Pizza 🍕
-Hambúrguer 🍔
 Sushi 🍣
 Chocolate 🍫
 
 Pode ser implementado com checkboxes.
 
-🥤 6. Escolha das Bebidas
+6. Escolha das Bebidas
 
 Exemplos:
 
@@ -95,7 +93,7 @@ Milkshake 🍓
 
 Também utilizando checkboxes.
 
-🎉 7. Tela Final
+7. Tela Final
 
 Após preencher tudo, o site exibe uma confirmação contendo:
 
@@ -119,7 +117,7 @@ Drinks: Coca-Cola, Frappé
 
 Can't wait to see you! ❤️
 
-🎨 Design
+Design
 Paleta de Cores
 Rosa Claro (#FFD6E8)
 Branco (#FFFFFF)
@@ -130,55 +128,10 @@ Romântico
 Minimalista
 Responsivo
 Animações suaves
-❤️ Corações Flutuantes
+Corações Flutuantes
 
-O fundo possui corações animados gerados dinamicamente.
 
-Exemplo:
-
-function createHeart() {
-    const heart = document.createElement("div");
-
-    heart.classList.add("heart");
-
-    heart.style.left = Math.random() * 100 + "vw";
-    heart.style.animationDuration =
-        Math.random() * 3 + 3 + "s";
-
-    document.body.appendChild(heart);
-
-    setTimeout(() => {
-        heart.remove();
-    }, 6000);
-}
-
-setInterval(createHeart, 300);
-🛠️ Tecnologias Utilizadas
-HTML5
-CSS3
-JavaScript (Vanilla JS)
-📁 Estrutura do Projeto
-date-invitation/
-│
-├── index.html
-├── style.css
-├── script.js
-│
-└── assets/
-    ├── envelope.png
-    ├── heart.svg
-    └── background.jpg
-🚀 Como Executar
-Clone o repositório:
-git clone https://github.com/seuusuario/date-invitation.git
-Entre na pasta:
-cd date-invitation
-Abra o arquivo:
-index.html
-
-ou utilize a extensão Live Server do VS Code.
-
-📱 Responsividade
+Responsividade
 
 O site foi projetado para funcionar em:
 
