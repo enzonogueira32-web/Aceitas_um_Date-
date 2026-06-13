@@ -7,7 +7,6 @@ const escolhas = {
   bebidas: []
 };
 
-// ─── Corações flutuantes ───────────────────────────────
 function criarCoracoes() {
   const container = document.getElementById('coracoes');
   const emojis = ['💕','💗','💖','🌸','✨','💝'];
@@ -23,7 +22,7 @@ function criarCoracoes() {
   }
 }
 
-// ─── Troca de telas ───────────────────────────────────
+// ─── Troca de telas
 function irPara(id) {
   document.querySelectorAll('.tela').forEach(t => t.classList.remove('ativa'));
   document.getElementById(id).classList.add('ativa');
@@ -34,18 +33,17 @@ function irPara(id) {
   }
 }
 
-// ─── Envelope ─────────────────────────────────────────
+// ─── Envelope 
 function abrirEnvelope() {
   document.getElementById('aba').classList.add('aberta');
   setTimeout(() => {
     irPara('tela2');
-    // Mostra o botão Não e ativa o comportamento fujão
     document.getElementById('btn-nao').style.display = 'block';
     ativarBotaoFujao();
   }, 800);
 }
 
-// ─── Botão fujão ──────────────────────────────────────
+// Botão 
 function ativarBotaoFujao() {
   const btn = document.getElementById('btn-nao');
   let tentativas = 0;
@@ -122,7 +120,7 @@ function selecionarVarios(el, chave, valor) {
   }
 }
 
-// ─── Avança só se algo foi selecionado ────────────────
+
 function avancarSeSelecionado(chave, proxTela) {
   if (!escolhas[chave]) {
     alert('Escolha uma opção antes de continuar! 💕');
@@ -146,11 +144,11 @@ function salvarDataHora() {
   irPara('tela5');
 }
 
-// ─── Monta e exibe o resumo final ─────────────────────
+
 function mostrarResumo() {
   irPara('tela7');
 
-  // Formata a data para português: "15 de junho de 2025"
+
   const dataFormatada = escolhas.data
     ? new Date(escolhas.data + 'T12:00').toLocaleDateString('pt-BR', {
         day: '2-digit', month: 'long', year: 'numeric'
@@ -191,7 +189,6 @@ function mostrarResumo() {
   lancarConfetes();
 }
 
-// ─── Confetes na tela final ───────────────────────────
 function lancarConfetes() {
   const wrap = document.getElementById('confetes');
   const cores = ['#f472a8','#fbbf24','#a78bfa','#34d399','#60a5fa'];
@@ -207,10 +204,10 @@ function lancarConfetes() {
     c.style.animationDelay   = (Math.random() * 1.5) + 's';
     wrap.appendChild(c);
 
-    // Remove o confete depois de 4s para não acumular na memória
+
     setTimeout(() => c.remove(), 4000);
   }
 }
 
-// ─── Inicia os corações ao carregar a página ──────────
+
 criarCoracoes();
