@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Um convite especial 💕</title>
+  
+  <title>❤️ Um convite especial </title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
 
@@ -23,7 +26,7 @@
     <p id="texto-envelope">Clique no envelope para abrir!</p>
   </div>
 
-  <!-- TELA 2: Pergunta -->
+ 
   <div class="tela" id="tela2">
     <img src="img/vcquersaircmg.png" style="font-size:4rem; animation: pulsando 1s ease-in-out infinite; width: 100px; height: 100px;">
     <h1>Você quer sair comigo?</h1>
@@ -34,7 +37,7 @@
     </div>
   </div>
 
-  <!-- TELA 3: Tipo de encontro -->
+  
   <div class="tela" id="tela3">
   <h2>Que tipo de encontro?</h2>
   <div class="grade-opcoes" id="grade-tipo">
@@ -63,9 +66,9 @@
   <button class="btn-proximo" onclick="avancarSeSelecionado('tipo','tela4')">Próximo →</button>
 </div>
 
-  <!-- TELA 4: Data e hora -->
+
   <div class="tela" id="tela4">
-    <h2>Quando nos encontramos? 📅</h2>
+    <h2>Quando nos encontramos? </h2>
     <div class="bloco-data">
       <label>Escolha o dia:</label>
       <input type="date" id="inputData" />
@@ -75,9 +78,9 @@
     <button class="btn-proximo" onclick="salvarDataHora()">Próximo →</button>
   </div>
 
-  <!-- TELA 5: Comidas -->
+
   <div class="tela" id="tela5">
-    <h2>O que vamos comer? <img src="img/vcquersaircmg.png" width="100px"> </h2>
+    <h2>O que vamos comer? <br><img src="img/vcquersaircmg.png" width="80px" style="display:block; margin: 8px auto 0;"></h2>
     <div class="grade-opcoes">
       <div class="card-opcao" onclick="selecionarVarios(this,'comidas','Pipoca')">
         <img src="img/pipoca.webp" width="100px" height="100px" class="icone"></img>Pipoca
@@ -92,7 +95,7 @@
         <img src="img/chocolate.jpg" width="100px" height="100px" class="icone"></img>Chocolate
       </div>
       <div class="card-opcao" onclick="selecionarVarios(this,'comidas','Sushi')">
-        <img src="img/sushi.webp" width="100px" height="100px" class="icone">🍣</img>Sushi
+        <img src="img/sushi.webp" width="100px" height="100px" class="icone"></img>Sushi
       </div>
     </div>
     <button class="btn-proximo" onclick="irPara('tela6')">Próximo →</button>
@@ -100,24 +103,24 @@
 
   <!-- TELA 6: Bebidas -->
   <div class="tela" id="tela6">
-    <h2>O que vamos beber? 🥤</h2>
+    <h2>O que vamos beber? <br><img src="img/vcquersaircmg.png" width="80px" style="display:block; margin: 8px auto 0;"></h2>
     <div class="grade-opcoes">
       <div class="card-opcao" onclick="selecionarVarios(this,'bebidas','Coca-Cola')">
-        <span class="icone">🥤</span>Coca-Cola
+        <img src="img/coca.jpg" width="100px" height="100px" class="icone"></img>Coca-Cola
       </div>
       <div class="card-opcao" onclick="selecionarVarios(this,'bebidas','Suco')">
-        <span class="icone">🍊</span>Suco
+        <img src="img/suco.jpg" width="100px" height="100px" class="icone"></img>Suco
       </div>
       <div class="card-opcao" onclick="selecionarVarios(this,'bebidas','Milk Shake')">
-        <span class="icone">🥛</span>Milk Shake
+        <img src="img/milk shake.jpg" width="100px" height="100px" class="icone"></img>Milk Shake
       </div>
     </div>
     <button class="btn-proximo" onclick="mostrarResumo()">Ver nosso encontro! 💖</button>
   </div>
 
-  <!-- TELA 7: Resumo final -->
+  
   <div class="tela" id="tela7">
-    <span style="font-size:4rem; animation: pulsando 1s ease-in-out infinite;">🎉</span>
+    <img src="img/emoji_alegre-removebg-preview.png" width="150px" height="150px" style="font-size:4rem; animation: pulsando 1s ease-in-out infinite;"></img>
     <h1 style="font-size:1.6rem;">Está confirmado!</h1>
     <p class="subtitulo">Mal posso esperar por nós dois 💕</p>
     <div class="card-resumo" id="card-resumo"></div>
