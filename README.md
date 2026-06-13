@@ -138,3 +138,7 @@ O site foi projetado para funcionar em:
 Desktop
 Tablet
 Smartphone
+
+link de acesso:
+
+https://conviteespecials.netlify.app/
