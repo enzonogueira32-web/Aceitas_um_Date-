@@ -1,4 +1,4 @@
-// Objeto que guarda todas as escolhas da usuária
+// guarda todas as escolhas da usuária
 const escolhas = {
   tipo: null,
   data: '',
@@ -7,7 +7,7 @@ const escolhas = {
   bebidas: []
 };
 
-// ─── Corações flutuantes ───────────────────────────────
+//Corações flutuantes 
 function criarCoracoes() {
   const container = document.getElementById('coracoes');
   const emojis = ['💕','💗','💖','🌸','✨','💝'];
@@ -39,7 +39,7 @@ function abrirEnvelope() {
   document.getElementById('aba').classList.add('aberta');
   setTimeout(() => {
     irPara('tela2');
-    // Mostra o botão Não e ativa o comportamento fujão
+    // Mostra o botão Não e ativa o comportamento de fugir do cursor do mouse
     document.getElementById('btn-nao').style.display = 'block';
     ativarBotaoFujao();
   }, 800);
